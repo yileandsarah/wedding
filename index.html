@@ -26,8 +26,14 @@
 
       <!-- Google Form --> 
       <div class='section rsvp' id ='rsvp'>
-         <script type="text/javascript">var submitted=false;</script>
-         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='THE REDIRECT LINK HERE';}"></iframe>
+         <script type="text/javascript">
+            var submitted=false;
+            function toggleModal() {
+               alert("I am an alert box!");
+            }
+         </script>
+
+         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='';}"></iframe>
          
          <form class="form" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScCKp-Fe4P7-XNDBSRqnWrB30Rv2wbAktA5sBGpSzFx1Y3Vtg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
             <h2 class = "full-width">r.s.v.p.</h2>
@@ -58,18 +64,18 @@
                <textarea name="entry.635042770" type = "text" id="" cols = "50" rows="7"></textarea>
             </p>
             <p class="full-width">
-               <input id = "rsvpbtn" class="btn" type="submit" value="RSVP"/>
+               <input id = "rsvpbtn" class="btn" type="submit" value="RSVP" onclick="toggleModal()">
             </p>
 
          </form>
 
-         <!-- Modal window
+         <!-- Modal window-->
          <div id="rsvpModal" class="modal">
             <div class="modal-content">
                <span class="close">&times;</span>
                <p>Some text in the Modal..</p>
             </div>
-         </div>-->
+         </div>
       </div>
 
       <div class='section feature-1'>
