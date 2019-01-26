@@ -30,29 +30,86 @@
          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='THE REDIRECT LINK HERE';}"></iframe>
          
          <form class="form" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScCKp-Fe4P7-XNDBSRqnWrB30Rv2wbAktA5sBGpSzFx1Y3Vtg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-            
-            <label>Name</label>
-            <input name="entry.129675239" type="text" placeholder="Name"/>
-
-            <label>Email</label>
-            <input name="entry.1526844272" type="text" required />
-
-            <label>Phone</label>
-            <input name="entry.95942997" type="text" required />
-
-            <label>No. of pax</label>
-            <select name="entry.1885113076" required>
-               <option value="1">1</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5</option>
-            </select>
-
-            <input type="submit" value="Send" />
+            <h2 class = "full-width">r.s.v.p.</h2>
+            <p>
+             <label for="">Name</label>
+             <input name="entry.129675239" type="text" required>
+            </p>
+            <p>
+             <label for="">Phone</label>
+             <input name="entry.95942997" type="text" required>
+            </p>
+            <p>
+             <label for="">Email</label>
+             <input name="entry.1526844272" type="text" required />
+            </p>
+            <p>
+               <label for="">No. of pax</label>
+               <select name="entry.1885113076" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+               </select>
+            </p>
+            <p class="full-width">
+               <label for="">Write us a message here!</label>
+               <textarea name="entry.635042770" type = "text" id="" cols = "50" rows="7"></textarea>
+            </p>
+            <p class="full-width">
+               <input class="btn" type="submit" value="RSVP" />
+            </p>
 
          </form>
       </div>
+            <!-- OLD VERSION
+            <div class = "row">
+               <h2>r.s.v.p</h2>
+            </div>
+            <div class = "row">
+               <div class = "col-label">
+                  <label>Name</label>
+               </div>
+               <div class = "col-input">
+                  <input name="entry.129675239" type="text" required>
+               </div>
+            </div>
+            <div class = "row">
+               <div class = "col-label">
+                  <label>Phone</label>
+               </div>
+               <div class = "col-input">
+                  <input name="entry.95942997" type="text" required>
+               </div>
+            </div>
+            <div class = "row">
+               <div class = "col-label">
+                  <label>Email</label>
+               </div>
+               <div class = "col-input">
+                  <input name="entry.1526844272" type="text" required />
+               </div>
+            </div>
+            <div class = "row">
+               <div class = "col-label">
+                  <label>No. of pax</label>
+               </div>
+               <div class = "col-input">
+                  <select name="entry.1885113076" required>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                  </select>
+               </div>
+            </div>
+            <div class = "row">
+               <input type="submit" value="Send" />
+            </div>
+         </form>
+      --> 
       <div class='section feature-1'>
          <img src='img/feature.svg'/>
       </div>
