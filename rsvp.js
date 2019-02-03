@@ -8,16 +8,12 @@ var btn = document.getElementById("rsvpbtn");
 var span = document.getElementsByClassName("close")[0];
 
 // Get the RSVP form
-var rsvp = document.getElementById("rsvpform");
+var rsvp = document.getElementById("rsvpform")
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function () {
-	// Get the RSVP name
-	var rsvpname = document.getElementById("rsvpname").value;
-	var greeting = document.getElementById("greeting");
-	greeting.innerHTML = rsvpname;
-	modal.style.display = "block";
-	}
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

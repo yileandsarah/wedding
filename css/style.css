@@ -5,13 +5,21 @@
 h1,h2 {
   font-family: 'fox in the snow', sans-serif;
   font-size: 3em;
+  color: #3C5B66;
 }
 h3,h4,h5,h6 {
   font-family: 'Cantarell', sans-serif;
 }
-p, a, label, input, textarea, option {
+p, a, label, input, textarea, option, select option:disabled {
   font-family: 'Cantarell', sans-serif;
 }
+
+ul, li{
+  font-family: 'Cantarell', sans-serif;
+  list-style-type: none; 
+  margin: 1em 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,10 +33,11 @@ p, a, label, input, textarea, option {
 
 .section {
   width: 100%;
-  height: 300px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2em;
 }
 .header {
   background-image: 
@@ -51,9 +60,12 @@ p, a, label, input, textarea, option {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #F8F8F9;
 }
 
+.hero-text h1 {
+  color: #F8F8F9;
+}
 .hero-text .btn {
   display: block;
   width: 200px;
@@ -62,26 +74,26 @@ p, a, label, input, textarea, option {
   margin: 50px auto;
   border-style: solid solid;
   border-radius: 10px;
-  color: white;
+  color: #F8F8F9;
+  text-decoration: none;
 }
 
 .hero-text .btn:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.70);
   color: black;
+  border-style: none;
+  text-decoration: none;
 }
 .content {
-  background-color: #EAEDF0;
-  display: inline;
-  height: auto;
+  background-color: #F8F8F9;
+  display: auto;
   vertical-align: top;
-  padding: 2em;
 }
 
 .rsvp {
-  background-color: #D6E9FE;
+  background-color: #F8F8F9;
   width: 100%;
   margin-top: 0;
-  height: auto;
   padding: 2em;
 }
 
@@ -91,14 +103,44 @@ textarea {
   border: 1px solid #708090;
 }
 
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: #F8F8F9;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
 .full-width .btn {
   display: block;
   padding: 1em;
   border-style: none;
-  color: white;
-  background-color: #708090;
+  color: #F8F8F9;
+  background-color: #71B1C2;
 }
 
+.footer h2{
+  font-size: 1em;
+  text-align: center;
+  padding: 0.5em;
+}
 
 /* The Modal (background) */
 .modal {
@@ -125,7 +167,7 @@ textarea {
   background-position: center;*/
   width: 70%;
   height: auto;
-  background-color: white;
+  background-color: #F8F8F9;
   margin: 50% auto; /* 50% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -146,10 +188,10 @@ textarea {
   cursor: pointer;
 }
 
-.modal .btn {
-  background-color: #4CAF50;
+.modal .cal {
+  background-color: #3C5B66;
   border: none;
-  color: white;
+  color: #F8F8F9;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -159,28 +201,42 @@ textarea {
   cursor: pointer;
 }
 
-.feature-1 {
-  background-color: #F5CF8E;
+
+.venue {
+  background-color: #71B1C2;
+  padding: 2em;
+  margin: 0px;
+  display: table;
+  width: 100%;
 }
 
-.feature-2 {
-  background-color: #F09A9D;
+.venue-map {
+  background-color: #F8F8F9;
+  padding: 0px;
+  margin: 0px;
+  display: table;
+  width: 100%;
+  height: 50vh;
+  border: 0px;
+}
+.programme {
+  background-color: #F8F8F9;
 }
 
-.feature-3 {
-  background-color: #C8C6FA;
+.food {
+  background-color: #F8F8F9;
 }
-
-
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-  .sign-up,
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 50%;
+  .venue {
+    width: 30%;
   }
+  .venue-map {
+    width: 70%;
+    height: auto;
+  }
+
   form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -200,26 +256,20 @@ textarea {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) and (max-width: 1900px){
-  .page {
-    /*width: 960px;*/
-    margin: 0 auto;
-  }
   .header {
     width: 100vw;
-    order: 1;
   }
   .content {
-    order: 2;
     padding: 10em;
   }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 33.3%;
-    order: 3;
+  .venue {
+    width: 30%;
+  }
+  .venue-map {
+    width: 70%;
+    height: auto;
   }
   .rsvp {
-    order: 4;
     height: auto;
   }
 
@@ -251,26 +301,21 @@ textarea {
   p, a, label {
     font-size: 2em;
   }
-  .page {
-    /*width: 960px;*/
-    margin: 0 auto;
-  }
   .header {
     width: 100vw;
-    order: 1;
   }
   .content {
-    order: 2;
     padding: 10em;
   }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 33.3%;
-    order: 3;
+  .venue {
+    width: 30%;
   }
+  .venue-map {
+    width: 70%;
+    height: auto;
+  }
+
   .rsvp {
-    order: 4;
     height: auto;
   }
 

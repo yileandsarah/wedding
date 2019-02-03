@@ -7,7 +7,9 @@
   content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 <title>Yi Le and Sarah's Wedding</title>
 <link rel='stylesheet' href='css/style.css'/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel ='stylesheet' href='css/animate.min.css'/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet">
@@ -23,11 +25,43 @@
         <a href="#rsvp" class="btn">RSVP</a>
      </div> 
   </div>
-  <div class='section content'>
+
+  <div class='section content story'>
+  	<div class= "story-text" data-aos="fade-down">
      <h2>our story, His story</h2>
-     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed felis in metus molestie venenatis. Aliquam varius nibh eu elit posuere, vitae dictum justo feugiat. Praesent scelerisque diam odio, ac cursus ante rutrum non. Proin nec euismod arcu. Etiam velit mi, tincidunt hendrerit pulvinar in, laoreet sit amet lectus. Mauris in orci eros. Nulla at enim sit amet ligula pellentesque sagittis in at erat. Proin porta non nisi vel interdum. Aliquam at lacus nunc. Etiam ultricies id orci sit amet varius. Phasellus viverra interdum efficitur. </p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed felis in metus molestie venenatis. Aliquam varius nibh eu elit posuere, vitae dictum justo feugiat. Praesent scelerisque diam odio, ac cursus ante rutrum non. Proin nec euismod arcu. Etiam velit mi, tincidunt hendrerit pulvinar in, laoreet sit amet lectus. Mauris in orci eros. Nulla at enim sit amet ligula pellentesque sagittis in at erat. Proin porta non nisi vel interdum. Aliquam at lacus nunc. Etiam ultricies id orci sit amet varius. Phasellus vierra interdum efficitur. </p>
+ 	</div>
   </div>
 
+<div class='venue' id="venue">
+	<div class= "venue-text" data-aos="fade-right">
+     <h2>venue</h2>
+     <li><b>Toa Payoh Chinese Methodist Church</b></li>
+     <li>Date: 14 December 2019, Saturday</li>
+     <li>Time: 10:30AM - 1:30PM </li>
+     <li>By Bus: 56, 105, 129, 153 </li>
+     <li>By MRT: Toa Payoh Station (NS19)</li>
+     <li>Note: Toa Payoh <i>Chinese</i> Methodist Church is located within the premises of Toa Payoh <i>Methodist</i> Church.</li>
+ 	</div>
+</div>
+
+<div class='venue-map'>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.737061101129!2d103.84428381476022!3d1.3339384619979384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19d91701af25%3A0x90ca73c682888c2b!2sToa+Payoh+Methodist+Church!5e0!3m2!1sen!2smy!4v1549168198036" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class='section programme' id="programme">
+	<div class= "programme-text" data-aos="fade-left">
+     <h2>programme</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed felis in metus molestie venenatis. Aliquam varius nibh eu elit posuere, vitae dictum justo feugiat. Praesent scelerisque diam odio, ac cursus ante rutrum non. Proin nec euismod arcu. Etiam velit mi, tincidunt hendrerit pulvinar in, laoreet sit amet lectus. Mauris in orci eros. Nulla at enim sit amet ligula pellentesque sagittis in at erat. Proin porta non nisi vel interdum. Aliquam at lacus nunc. Etiam ultricies id orci sit amet varius. Phasellus viverra interdum efficitur. </p>
+ 	</div>
+  </div>
+
+  <div class='section food' id="food">
+  	<div class= "food-text" data-aos="fade-right">
+     <h2>food</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed felis in metus molestie venenatis. Aliquam varius nibh eu elit posuere, vitae dictum justo feugiat. Praesent scelerisque diam odio, ac cursus ante rutrum non. Proin nec euismod arcu. Etiam velit mi, tincidunt hendrerit pulvinar in, laoreet sit amet lectus. Mauris in orci eros. Nulla at enim sit amet ligula pellentesque sagittis in at erat. Proin porta non nisi vel interdum. Aliquam at lacus nunc. Etiam ultricies id orci sit amet varius. Phasellus viverra interdum efficitur. </p>
+ 	</div>
+</div>
   <!-- Google Form --> 
   <div class='section rsvp' id ='rsvp'>
      <script type="text/javascript">
@@ -40,9 +74,36 @@
      
      <form class="form" id = "rsvpform" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScCKp-Fe4P7-XNDBSRqnWrB30Rv2wbAktA5sBGpSzFx1Y3Vtg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <h2 class = "full-width">r.s.v.p.</h2>
+        <!--New Form-->
+        <div class="input-container">
+        	<i class="fa fa-user icon"></i>
+        	<input name="entry.129675239" type="text" id="rsvpname" required class="input-field" placeholder="Name">
+        </div>
+
+        <div class="input-container">
+        	<i class="fa fa-phone icon"></i>
+        	<input class="input-field" type="text" placeholder="Phone Number" name="entry.95942997">
+        </div>
+
+        <div class="input-container">
+        	<i class="fa fa-envelope icon"></i>
+        	<input class="input-field" type="text" placeholder="Email" name="entry.1526844272">
+        </div>
+        <div class="input-container">
+        	<i class="fa fa-group icon"></i>
+        	<select name="entry.1885113076" placeholder="No. of pax" required>
+        		<option disabled value="" selected hidden>No of pax</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+           </select>
+        </div>
+        <!--Old Form --
         <p>
          <label for="">Name</label>
-         <input name="entry.129675239" type="text" required>
+         <input name="entry.129675239" type="text" id="rsvpname" required>
         </p>
         <p>
          <label for="">Phone</label>
@@ -50,7 +111,7 @@
         </p>
         <p>
          <label for="">Email</label>
-         <input name="entry.1526844272" type="text" required />
+         <input name="entry.1526844272" type="text" required>
         </p>
         <p>
            <label for="">No. of pax</label>
@@ -61,7 +122,7 @@
               <option value="4">4</option>
               <option value="5">5</option>
            </select>
-        </p>
+        </p>-->
         <p class="full-width">
            <label for="">Write us a message here!</label>
            <textarea name="entry.635042770" type = "text" id="" cols = "50" rows="7"></textarea>
@@ -71,33 +132,29 @@
         </p>
 
      </form>
-	<div id="myModal" class="modal">
-	   <!-- Modal content -->
-	   <div class="modal-content">
-	     <span class="close">&times;</span>
-	     <h1>thank you!</h1>
-	     <p>We can't wait to see you there.</p>
-	     <a class="btn" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDdpZ2Iyb2t0YjJhdjY3M3Vuc3Y5ZWhyNjEgeWlsZWFuZHNhcmFoQG0&amp;tmsrc=yileandsarah%40gmail.com">
-	     	<i class="material-icons">calendar_today</i> 
-	     Add to Google Calendar</a>
-	   </div>
-	</div>
-
   </div>
 
-  <div class='section feature-1'>
-
-  </div>
-  <div class='section feature-2'>
-     <img src='img/feature.svg'/>
-  </div>
-  <div class='section feature-3'>
-     <img src='img/feature.svg'/>
-  </div>
+<div class='section footer'>
+	<h2>made with &hearts; by Yi Le and Sarah</h2>
 </div>
 
+<div id="myModal" class="modal">
+   <div class="modal-content">
+     <span class="close">&times;</span>
+     <h2>thank you,</h2>
+     <h2 id="greeting">friend!</h2>
+     <p>We can't wait to see you there.</p>
+     <a class="btn" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDdpZ2Iyb2t0YjJhdjY3M3Vuc3Y5ZWhyNjEgeWlsZWFuZHNhcmFoQG0&amp;tmsrc=yileandsarah%40gmail.com">
+     	<i class="material-icons">calendar_today</i> 
+     Add to Google Calendar</a>
+   </div>
+</div>
 
 <script src='script/rsvp.js' type='text/javascript'></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 
 </body>
 
