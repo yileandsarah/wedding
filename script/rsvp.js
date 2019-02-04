@@ -11,7 +11,7 @@ var span = document.getElementsByClassName("close")[0];
 var rsvp = document.getElementById("rsvpform");
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function () {
+function checkRSVP() {
 	// Get the RSVP name
 	var rsvpname = document.getElementById("rsvpname").value;
 	var greeting = document.getElementById("greeting");

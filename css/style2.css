@@ -50,18 +50,41 @@ html, body {
   	color: #F8F8F9;
 }
 
-.navbar {
-    background-color: rgba(0,0,0,0.3);
-  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-    height: 60px;
-    border-bottom: 0px;
-    transition: background-color .5s ease 0s;
-}
-
-.navbar .opaque {
-    background-color: black;
-    height: 60px;
-    transition: background-color .5s ease 0s;
+.nav-container {
+  height: 58px;
+  width: 100%;
+  position: fixed;
+  color: white;
+  //text-transform: uppercase;
+  letter-spacing: 0.025em;
+  transition: background-color 0.2s linear;
+  
+  &.solid-nav {
+    background-color: #aaa;
+    transition: background-color 0.2s linear;
+  }
+  
+  .nav-row {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 18px;
+    
+    .nav-logo {
+      display: inline-block;
+      font-weight: 900;
+    }
+    
+    .nav-controls {
+      float: right;
+      
+      a {
+        padding-left: 20px;
+      }
+    }
+  }
 }
 
 ul.dropdown-menu {
