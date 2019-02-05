@@ -13,6 +13,8 @@
 <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script/scrolling.js"></script>
 </head>
   
 <body>
@@ -24,38 +26,32 @@
         <h4 class="animated fadeIn delay-3s">ARE GETTING MARRIED</h4>
       </div>
       <div class="hero-scroll">
-        <p class="animated fadeIn delay-4s"><i>scroll to rsvp</i></p>
+        <a class="animated fadeIn delay-4s" href="#rsvp"><i>scroll to rsvp</i></a>
         <i class="material-icons  arrow">expand_more</i>
         <!--img class="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" />
         <a href="#rsvp" class="btn">RSVP</a>-->
      </div>
      </div> 
   
-
+  <div class="title" id="story">
+    <h2>our story, His story</h2>
+  </div>
   <div class='section content story'>
   	<div class= "story-text" data-aos="fade-down">
-     <h2>our story, His story</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed felis in metus molestie venenatis. Aliquam varius nibh eu elit posuere, vitae dictum justo feugiat. Praesent scelerisque diam odio, ac cursus ante rutrum non. Proin nec euismod arcu. Etiam velit mi, tincidunt hendrerit pulvinar in, laoreet sit amet lectus. Mauris in orci eros. Nulla at enim sit amet ligula pellentesque sagittis in at erat. Proin porta non nisi vel interdum. Aliquam at lacus nunc. Etiam ultricies id orci sit amet varius. Phasellus vierra interdum efficitur. </p>
+     <p>Opposites attract, but "love covers over a multitude of sins" (<a href="https://biblehub.com/1_peter/4-8.htm">1 Peter 4:8</a>). We first met in 2013, when we were going to university in Cambridge. It was an exciting time of learning and exploration for us, and we became fast friends. </br></br>
+     But it wasn't till 2015 that we got together. Then, Yi Le declared that we were on a 3-year plan to be wed... </br></br> 
+     ...we've taken a little longer than that! Along the way, we discovered that marriage is hard work. Sometimes it's hard enough to decide what to do with our time together - let alone what to do with a lifetime together.</br></br>
+     At our lowest point, we even wondered if our relationship could survive the trials of life. But that was when we were taught our most important lesson so far: "unless God builds the house, the builders build in vain" (<a href="https://www.biblegateway.com/passage/?search=Psalm+127&version=ESV">Psalm 127:1</a>).</br></br>
+   We invite you to join us as we take our vows - and to remind us that love and forgiveness aren't always easy, but they're worth it. </p>
+     <blockquote>There are many love stories, but ours is His story.</blockquote>
  	</div>
   </div>
 
-<div class='venue' id="venue">
-	<div class= "venue-text" data-aos="fade-right">
-     <h2>venue</h2>
-     <li><b>Toa Payoh Chinese Methodist Church</b></li>
-     <li>Date: 14 December 2019, Saturday</li>
-     <li>Time: 10:30AM - 1:30PM </li>
-     <li>By Bus: 56, 105, 129, 153 </li>
-     <li>By MRT: Toa Payoh Station (NS19)</li>
-     <li>Note: Toa Payoh <i>Chinese</i> Methodist Church is located within the premises of Toa Payoh <i>Methodist</i> Church.</li>
- 	</div>
+<div class="title" id="pics">
+  <h2>our pictures</h2>
 </div>
+<div class="section gallery" data-aos="fade-down"> 
 
-<div class='venue-map'>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.737061101129!2d103.84428381476022!3d1.3339384619979384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19d91701af25%3A0x90ca73c682888c2b!2sToa+Payoh+Methodist+Church!5e0!3m2!1sen!2smy!4v1549168198036" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-
-<div class="section gallery"> 
   <div class="gallery-col">
     <img src="img/dubrovnik.jpg">
   </div>
@@ -69,6 +65,27 @@
     <img src="img/many_waters.jpg">
   </div>
 </div>
+
+<div class="title" id="venue">
+  <h2>venue</h2>
+</div>
+<div class='venue' id="venue">
+	<div class= "venue-text" data-aos="fade-right">
+    
+     <li><b>Toa Payoh Chinese Methodist Church</b></li>
+     <li>Date: 14 December 2019, Saturday</li>
+     <li>Time: 10:30AM - 1:30PM </li>
+     <li>By Bus: 56, 105, 129, 153 </li>
+     <li>By MRT: Toa Payoh Station (NS19)</li>
+     <li>Note: Toa Payoh <i>Chinese</i> Methodist Church is located within the premises of Toa Payoh <i>Methodist</i> Church.</li>
+ 	</div>
+</div>
+
+<div class='venue-map'>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.737061101129!2d103.84428381476022!3d1.3339384619979384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19d91701af25%3A0x90ca73c682888c2b!2sToa+Payoh+Methodist+Church!5e0!3m2!1sen!2smy!4v1549168198036" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
 <!--div class='section programme' id="programme">
 	<div class= "programme-text" data-aos="fade-left">
      <h2>programme</h2>
@@ -83,7 +100,10 @@
  	</div>
 </div>-->
   <!-- Google Form --> 
-  <div class='section rsvp' id ='rsvp'>
+  <div class ="title" id ='rsvp'>
+    <h2>r.s.v.p.</h2>
+  </div>
+  <div class='section rsvp' >
      <script type="text/javascript">
         var submitted=false;
      </script>
@@ -93,7 +113,7 @@
      	}"></iframe>
      
      <form class="form" id = "rsvpform" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScCKp-Fe4P7-XNDBSRqnWrB30Rv2wbAktA5sBGpSzFx1Y3Vtg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-        <h2 class = "full-width">r.s.v.p.</h2>
+        
         <!--New Form-->
         <div class="input-container">
         	<i class="fa fa-user icon"></i>
@@ -120,29 +140,6 @@
               <option value="5">5</option>
            </select>
         </div>
-        <!--Old Form --
-        <p>
-         <label for="">Name</label>
-         <input name="entry.129675239" type="text" id="rsvpname" required>
-        </p>
-        <p>
-         <label for="">Phone</label>
-         <input name="entry.95942997" type="text" required>
-        </p>
-        <p>
-         <label for="">Email</label>
-         <input name="entry.1526844272" type="text" required>
-        </p>
-        <p>
-           <label for="">No. of pax</label>
-           <select name="entry.1885113076" required>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-           </select>
-        </p>-->
         <p class="full-width">
            <label for="">Write us a message here!</label>
            <textarea name="entry.635042770" type = "text" id="" cols = "50" rows="7"></textarea>
