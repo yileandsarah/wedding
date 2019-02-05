@@ -10,7 +10,6 @@ h1,h2 {
   font-family: 'fox in the snow', sans-serif;
   font-size: 2.5em;
   color: #FCFBF8;
-  background-color: #196D8A;
 }
 h3,h4,h5,h6 {
   font-family: 'Cantarell', sans-serif;
@@ -38,8 +37,9 @@ ul, li{
 }
 
 blockquote {
-  font-family: 'Cantarell', sans-serif;
-  font-size: 1.5em;
+  font-family: 'fox in the snow', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
   background: #f9f9f9;
   border-left: 10px solid #C3D46A;
   margin: 1.5em 10px;
@@ -78,7 +78,7 @@ blockquote p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
+  padding: 2em 1em;
 }
 .header {
   background-image: 
@@ -155,6 +155,23 @@ blockquote p {
   max-width: 100%;
   text-align: center;
   padding: 1em 0;
+  margin: 2em auto 2em;
+  background: #196D8A;
+  position: relative;
+  z-index: 1;
+}
+.title:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 .gallery-col {
@@ -253,6 +270,10 @@ textarea {
   margin: 10% auto; /* 50% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
+}
+
+.modal-content h2{
+  color: black;
 }
 
 /* The Close Button */
