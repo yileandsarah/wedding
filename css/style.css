@@ -404,7 +404,7 @@ textarea {
   }
 
   .full-width {
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
   }
   .modal-content {
     width: 50%;
@@ -469,7 +469,7 @@ textarea {
     font-size: 2em;
   }
   .full-width {
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
   }
   .full-width .btn {
     font-size: 2em;
