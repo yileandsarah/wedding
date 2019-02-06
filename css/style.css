@@ -233,6 +233,10 @@ textarea {
   background-color: #C3D46A;
 }
 
+.full-width .btn:hover, .full-width .btn:focus {
+  background-color: #FAEA4c;
+}
+
 .footer h2{
   font-size: 1em;
   text-align: center;
@@ -410,13 +414,17 @@ textarea {
 /* 4K Desktop Styles */
 @media only screen and (min-width: 1901px) {
   h1,h2 {
-    font-size: 9em;
+    font-size: 7em;
   }
   h3,h4,h5,h6 {
     font-size: 3em;
   }
-  p, a, label {
+  p, label, input, li {
     font-size: 2em;
+  }
+
+  blockquote {
+    font-size: 3em;
   }
   .header {
     width: 100vw;
@@ -453,6 +461,10 @@ textarea {
     margin: 0;
     font-size: 1em;
   }
+
+  form i {
+    font-size: 2em;
+  }
   input[type="text"],textarea[type="text"],select{
     font-size: 2em;
   }
@@ -464,5 +476,8 @@ textarea {
   }
   .modal-content {
     width: 50%;
+  }
+  .footer {
+    font-size: 2em;
   }
 }
