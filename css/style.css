@@ -145,18 +145,13 @@ blockquote p {
   vertical-align: top;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .title {
   flex: 100%;
   max-width: 100%;
   text-align: center;
   padding: 1em 0;
   margin: 2em auto 2em;
-  background: #196D8A;
+  background: #669DB0;
   position: relative;
   z-index: 1;
 }
@@ -174,18 +169,21 @@ blockquote p {
   z-index: -1;
 }
 
-.gallery-col {
-  flex: 100%;
+.container {
+  margin: auto;
+}
+
+.responsive-image {
   max-width: 100%;
 }
 
-.gallery-col img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  height: 50vh;
+.cell img {
+  display: block;
+  width: 80vw;
+  height: 80vw;
   object-fit: cover;
 }
+
 
 .rsvp {
   background-color: #FCFBF8;
@@ -209,7 +207,7 @@ textarea {
 
 .icon {
   padding: 10px;
-  background: #196D8A;
+  background: #669DB0;
   color: #FCFBF8;
   min-width: 50px;
   text-align: center;
@@ -222,7 +220,7 @@ textarea {
 }
 
 .input-field:focus {
-  border: 2px solid #196D8A;
+  border: 2px solid #669DB0;
 }
 
 .full-width .btn {
@@ -296,7 +294,7 @@ textarea {
 }
 
 .modal .cal {
-  background-color: #196D8A;
+  background-color: #669DB0;
   border: none;
   color: #FCFBF8;
   padding: 15px 32px;
@@ -327,8 +325,6 @@ textarea {
   border: 0px;
 }
 
-
-
 .programme {
   background-color: #FCFBF8;
 }
@@ -339,6 +335,19 @@ textarea {
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 960px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+  .cell img {
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+  }
   .venue {
     width: 30%;
   }
@@ -386,11 +395,20 @@ textarea {
   .rsvp {
     height: auto;
   }
-  .gallery-col {
-    flex: 25%;
-    max-width: 25%;
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(100% / 3);
   }
 
+  .cell img {
+    width: 33vw;
+    height: 33vw;
+    object-fit: cover;
+  }
   form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -440,11 +458,19 @@ textarea {
     height: auto;
   }
 
-  .gallery-col {
-    flex: 25%;
-    max-width: 25%;
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
-
+  .cell {
+    width: calc(100% / 4);
+  }
+  .cell img {
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+  }
   .rsvp {
     height: auto;
   }
