@@ -108,9 +108,7 @@
         var submitted=false;
      </script>
 
-     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {
-     	checkRSVP();
-     	}"></iframe>
+     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onsubmit= "checkRSVP()"></iframe>
      
      <form class="form" id = "rsvpform" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScCKp-Fe4P7-XNDBSRqnWrB30Rv2wbAktA5sBGpSzFx1Y3Vtg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
         
