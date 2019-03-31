@@ -122,7 +122,7 @@
 
         <div class="input-container">
         	<i class="fa fa-phone icon"></i>
-        	<input name="entry.95942997" class="input-field" type="number" pattern="(6|8|9)\d{7}" placeholder="新加坡电话号码" required>
+        	<input name="entry.95942997" class="input-field" type="number" pattern="(6|8|9)\d{7}" placeholder="电话号码" required>
         </div>
 
         <div class="input-container">
@@ -132,25 +132,29 @@
 
         <div class="input-container">
         	<i class="fa fa-group icon"></i>
-        	<select name="entry.1885113076" placeholder="No. of pax">
-        		<option disabled value="" selected hidden>额外客人数量</option>
+        	<select name="entry.1885113076" placeholder="No. of guests" required>
+        		<option disabled value="" selected hidden>客人数量</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
            </select>
         </div>
         
         <div class="input-container">
           <i class="fa fa-key icon"></i>
-          <input name="entry.482485044" class="input-field" type="number" pattern="141219" placeholder="Invite Code" required>
+          <input name="entry.482485044" class="input-field" type="number" pattern="/^141219$/" placeholder="Invite Code" required>
         </div>
 
-        <p class="full-width">
+        <!--p class="full-width">
            <label for="">写一下我的留言</label>
            <textarea name="entry.635042770" type = "text" id="" cols = "50" rows="7"></textarea>
-        </p>
+        </p-->
         <p class="full-width">
            <input id = "rsvpbtn" class="btn" type="submit" value="回复">
         </p>
@@ -158,6 +162,9 @@
      </form>
   </div>
 
+<div class='section footer'>
+  <p class = "full-width">若您有任何疑问，请通过电邮（<a href="mailto:yileandsarah@gmail.com">yileandsarah@gmail.com</a>）或WhatsApp（<a href="https://wa.me/6592986027">以勒</a>/<a href="https://wa.me/6593219218">锐齐</a>)联系我们。</p>
+</div>
 <div class='section footer'>
 	<h2>made with &hearts; by Yi Le and Sarah</h2>
 </div>
@@ -174,7 +181,7 @@
    </div>
 </div>
 
-<script src='script/rsvp.js' type='text/javascript'></script>
+<script src='../script/rsvp.js' type='text/javascript'></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 	AOS.init();

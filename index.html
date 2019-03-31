@@ -122,7 +122,7 @@
 
         <div class="input-container">
         	<i class="fa fa-phone icon"></i>
-        	<input name="entry.95942997" class="input-field" type="number" pattern="(6|8|9)\d{7}" placeholder="SG Phone No." required>
+        	<input name="entry.95942997" class="input-field" type="number" pattern="(6|8|9)\d{7}" placeholder="Phone No." required>
         </div>
 
         <div class="input-container">
@@ -132,25 +132,29 @@
 
         <div class="input-container">
         	<i class="fa fa-group icon"></i>
-        	<select name="entry.1885113076" placeholder="No. of pax">
-        		<option disabled value="" selected hidden>No of additional guests</option>
+        	<select name="entry.1885113076" placeholder="No. of guests" required>
+        		<option disabled value="" selected hidden>Total Number of Guests</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
            </select>
         </div>
         
         <div class="input-container">
           <i class="fa fa-key icon"></i>
-          <input name="entry.482485044" class="input-field" type="number" pattern="141219" placeholder="Invite Code" required>
+          <input name="entry.482485044" class="input-field" type="number" pattern="/^141219$/" placeholder="Invite Code" required>
         </div>
 
-        <p class="full-width">
+        <!-- p class="full-width">
            <label for="">Write us a message here!</label>
-           <textarea name="entry.635042770" type = "text" id="" cols = "50" rows="7"></textarea>
-        </p>
+           <textarea name="entry.635042770" type="text" cols = "50" rows="7"></textarea>
+        </p-->
         <p class="full-width">
            <input id = "rsvpbtn" class="btn" type="submit" value="RSVP">
         </p>
@@ -159,7 +163,10 @@
   </div>
 
 <div class='section footer'>
-	<h2>made with &hearts; by Yi Le and Sarah</h2>
+  <p class = "full-width">Queries? Write us a message at <a href="mailto:yileandsarah@gmail.com">yileandsarah@gmail.com</a>, or WhatsApp <a href="https://wa.me/6592986027">Yi Le</a> or <a href="https://wa.me/6593219218">Sarah</a>.</p>
+</div>
+<div class='section footer'>
+	<h1>made with &hearts; by Yi Le and Sarah</h1>
 </div>
 
 <div id="myModal" class="modal">
