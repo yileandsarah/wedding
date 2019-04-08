@@ -305,16 +305,16 @@ textarea {
   cursor: pointer;
 }
 
-.modal .cal {
+.modal .btn {
   background-color: #669DB0;
   border: none;
   color: #FCFBF8;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 6px 2px;
   cursor: pointer;
 }
 
